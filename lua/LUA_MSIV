@@ -1,0 +1,725 @@
+freeslot("MT_AKUMASK_SHIELD", 
+         "MT_UKAMASK_SHIELD", 
+         "MT_VELOMASK_SHIELD", 
+         "MT_EXMASK_SHIELD", 
+         "MT_SPARX_SHIELD", 
+         "MT_APOMASK_SHIELD")
+freeslot("S_AKUMASK_SHIELD", 
+         "S_UKAMASK_SHIELD", 
+         "S_VELOMASK_SHIELD", 
+         "S_EXMASK_SHIELD", 
+         "S_SPARX_SHIELD", 
+         "S_APOMASK_SHIELD")
+freeslot("SPR_AKUM",
+		 "SPR_UKAM", 
+		 "SPR_VELO",
+		 "SPR_EXMS",
+		 "SPR_SPRX",
+		 "SPR_APOM")
+freeslot("sfx_akuinv",
+         "sfx_akuonn", 
+		 "sfx_akuoff",
+		 "sfx_akursp",
+		 "sfx_akuwro", 
+		 "sfx_ukainv",
+         "sfx_ukaonn", 
+		 "sfx_ukaoff",
+		 "sfx_ukarsp",
+		 "sfx_ukawro",
+		 "sfx_veloin",
+         "sfx_veloon", 
+		 "sfx_veloof",
+		 "sfx_velors",
+		 "sfx_velowr", 
+		 "sfx_exinvi",
+         "sfx_exoonn", 
+		 "sfx_exooff",
+		 "sfx_exrspw",
+		 "sfx_exwron", 
+		 "sfx_sprxin",
+         "sfx_sprxon", 
+		 "sfx_sprxof",
+		 "sfx_sprxrs",
+		 "sfx_sprxwr", 
+		 "sfx_apoinv",
+         "sfx_apoonn", 
+		 "sfx_apooff",
+		 "sfx_aporsp",
+		 "sfx_apowro")
+
+------------------------------------
+//You can modify bellow to set which masks protect which characters
+------------------------------------
+------------------------------------
+//Characters protected by Aku-Aku (Earth Heroes)
+------------------------------------
+local heroskin = {
+  ["crashbandicoot"] = true,
+  ["cocobandicoot"] = true,
+  ["crunchbandicoot"] = true,
+  ["polar"] = true,
+  ["pura"] = true,
+  ["tawnabandicoot"] = true,
+  ["nsami"] = true,
+  ["nsmegumi"] = true,
+  ["nsliz"] = true,
+  ["nsisabella"] = true,
+  ["passadena"] = true,
+  ["vonclutch"] = true,
+  ["yayapanda"] = true,
+  ["hasty"] = true,
+  ["chick"] = true,
+  ["stew"] = true,
+  ["babycrash"] = true,
+  ["babycoco"] = true,
+  ["babyt"] = true,
+  ["arle"] = true,
+  ["carb"] = true,
+  ["amitie"] = true,
+  ["fever_amitie"] = true,
+  ["ring"] = true,
+  ["ally"] = true,
+  ["schezo"] = true,
+  ["raffina"] = true,
+  ["lidelle"] = true,
+  ["maguro"] = true,
+  ["draco"] = true,
+  ["puyo_witch"] = true,
+  ["yu&rei"] = true,
+  ["hohow_bird"] = true,
+  ["sonic"] = true,
+  ["lucario"] = true,
+  ["pharaohman"] = true,
+  ["mondo"] = true,
+  ["luciferloud"] = true,
+  ["ado"] = true,
+  ["adeleine"] = true,
+  ["gold"] = true,
+  ["tails"] = true,
+  ["nitori"] = true,
+  ["peacock"] = true,
+  ["knuckles"] = true,
+  ["crashman"] = true,
+  ["geno"] = true,
+  ["woodman"] = true,
+  ["nuzleaf"] = true,
+  ["puppetmon"] = true,
+  ["hsien-ko"] = true,
+  ["topman"] = true,
+  ["charizard"] = true,
+  ["incineroar"] = true,
+  ["chuckdhead"] = true,
+  ["conker"] = true,
+  ["goemon"] = true,
+  ["ebisumaru"] = true,
+  ["kris"] = true,
+  ["susie"] = true,
+  ["ralsei"] = true,
+  ["cottoncandy"] = true,
+  ["blackcookie"] = true, 
+  ["ioncookie"] = true,
+  ["lime_cookie"] = true,
+  ["roguefort"] = true,
+  ["flicky"] = true,
+  ["amy"] = true,
+  ["mighty"] = true,
+  ["ray"] = true,
+  ["espio"] = true,
+  ["vector"] = true,
+  ["chao"] = true,
+  ["gamma"] = true,
+  ["herochao"] = true,
+  ["cream"] = true,
+  ["blaze"] = true,
+  ["silver"] = true,
+  ["wonderboy"] = true,
+  ["nights"] = true,
+  ["sakura"] = true,
+  ["ulala"] = true,
+  ["beat"] = true,
+  ["vyse"] = true,
+  ["aiai"] = true,
+  ["kiryu"] = true,
+  ["aigis"] = true,
+  ["miku"] = true
+}
+------------------------------------
+//Characters protected by Uka-Uka (Earth Villains)
+------------------------------------
+local villainskin = {
+  ["neocortex"] = true,
+  ["ngin"] = true,
+  ["tinytiger"] = true,
+  ["dingodile"] = true,
+  ["ntropy"] = true,
+  ["fakecrash"] = true,
+  ["ripperroo"] = true,
+  ["papupapu"] = true,
+  ["komodojoe"] = true,
+  ["pinstripe"] = true,
+  ["koalakong"] = true,
+  ["rillaroo"] = true,
+  ["komodomoe"] = true,
+  ["nina_cortex"] = true,
+  ["nbrio"] = true,
+  ["babycortex"] = true,
+  ["babytropy"] = true,
+  ["labass"] = true,
+  ["bratgirl"] = true,
+  ["fakecoco"] = true,
+  ["ashley"] = true,
+  ["marlena"] = true,
+  ["eggman"] = true,
+  ["metalsonic"] = true,
+  ["motobug"] = true,
+  ["chaos"] = true,
+  ["shadow"] = true,
+  ["rouge"] = true,
+  ["darkchao"] = true,
+  ["omega"] = true,
+  ["satan"] = true,
+  ["doppel_arle"] = true,
+  ["popoiblack"] = true,
+  ["rafisol"] = true,
+  ["bowser"] = true,
+  ["bowserjr"] = true,
+  ["shadowman"] = true,
+  ["smarty"] = true,
+  ["sabrewulf"] = true,
+  ["monokuma"] = true,
+  ["junkoenoshima"] = true,
+  ["lancer"] = true
+}
+------------------------------------
+//Characters protected by Velo (Space Villains)
+------------------------------------
+local spacevillainskin = {
+  ["nitros_oxide"] = true,
+  ["nitros_oxide_k"] = true,
+  ["velo"] = true,
+  ["realvelo"] = true,
+  ["zam"] = true,
+  ["zem"] = true,
+  ["ntrance"] = true,
+  ["krunk"] = true,
+  ["nash"] = true,
+  ["smallnorm"] = true,
+  ["bignorm"] = true,
+  ["geary"] = true,
+  ["ecolo"] = true,
+  ["dark_arle"] = true,
+  ["marlealt"] = true
+}
+------------------------------------
+//Characters protected by Ex (Space Heroes)
+------------------------------------
+local spaceheroskin = {
+  ["tee"] = true,
+  ["ex"] = true,
+  ["ess"] = true,
+  ["ai"] = true,
+  ["o"] = true,
+  ["jayandelle"] = true,
+  ["zed"] = true,
+  ["marle"] = true,
+  ["fox"] = true
+}
+------------------------------------
+//Characters protected by Sparx (Spyro Characters Exclusive)
+------------------------------------
+local spyroskin = {
+  ["spyro"] = true,
+  ["ctrspyro"] = true,
+  ["hunter"] = true,
+  ["gnastygnorc"] = true,
+  ["ripto"] = true,
+  ["spyro_sorceress"] = true
+}
+------------------------------------
+//Characters or Skin Variants protected by Apo-Apo (Post-Apocalyptic, Steam City, Etc.)
+------------------------------------
+local aposkin = {
+  ["doom"] = true,
+  ["apocrash"] = true,
+  ["steamarle"] = true,
+  ["aponina"] = true,
+  ["steamraffina"] = true,
+  ["apodingodile"] = true,
+  ["steammaguro"] = true
+} 
+------------------------------------
+//List ends here, please don't touch anything of the following.
+------------------------------------
+
+local mask_invulthemes = {
+	heroskin = "AKUINV", 
+	villainskin = "UKAINV",
+	spacevillainskin = "VELOIN",
+	spaceheroskin = "EXINVI",	
+	spyroskin = "SPRXIN",	
+	aposkin = "APOINV"
+}
+
+local origSounds = {}
+local replSounds = {}
+
+local A = sfx_kinvnc
+local B = sfx_alarmi
+local C = sfx_kgrow
+local D = sfx_alarmg
+
+local splitplayers = {}
+local function splitnum(p)
+
+	for i = 1, #splitplayers do
+		if splitplayers[i] == p
+			return i-1
+		end
+	end
+end
+
+local BASEVIDWIDTH  = 320
+local BASEVIDHEIGHT = 200
+
+local ITEM_X = 5
+local ITEM_Y = 5
+
+local ITEM1_X = -9
+local ITEM1_Y = -8
+
+local ITEM2_X = BASEVIDWIDTH-39
+local ITEM2_Y = -8
+
+hud.add(function(v, p, c)
+
+splitplayers[#splitplayers+1] = p
+
+if p.kartstuff[k_itemtype] == 3 and (heroskin[p.mo.skin] or villainskin[p.mo.skin] or spacevillainskin[p.mo.skin] or spaceheroskin[p.mo.skin] or spyroskin[p.mo.skin] or aposkin[p.mo.skin]) and (not p.kartstuff[k_itemroulette]) then	--fuck
+	hud.disable("item")
+	local fx = 0
+	local fy = 0
+	local fflags = 0
+	local flipamount = false
+	local offset = ((splitscreen > 1) and 2 or 1)
+	
+	local kp_itemx = v.cachePatch("K_ITX")
+	local localbg = {v.cachePatch("K_ITBG"), v.cachePatch("K_ISBG")}
+	local localmul = {v.cachePatch("K_ITMUL"), v.cachePatch("K_ISMUL")}
+	local k_maskpatch = {
+	v.cachePatch("K_ITAKUM"), 
+	v.cachePatch("K_ITUKAM"), 
+	v.cachePatch("K_ITVELO"), 
+	v.cachePatch("K_ITEXMS"), 
+	v.cachePatch("K_ITSPRX"), 
+	v.cachePatch("K_ITAPOM")
+	}
+	local k_maskpatchsmall = {
+	v.cachePatch("K_ISAKUM"), 
+	v.cachePatch("K_ISUKAM"), 
+	v.cachePatch("K_ISVELO"), 
+	v.cachePatch("K_ISEXMS"), 
+	v.cachePatch("K_ISSPRX"), 
+	v.cachePatch("K_ISAPOM")
+	}
+	
+	local get
+	if heroskin[p.mo.skin] then
+		get = 1
+	elseif villainskin[p.mo.skin] then
+		get = 2
+	elseif spacevillainskin[p.mo.skin] then
+		get = 3
+	elseif spaceheroskin[p.mo.skin] then
+		get = 4
+	elseif spyroskin[p.mo.skin] then
+		get = 5
+	elseif aposkin[p.mo.skin] then
+		get = 6
+	end
+	
+	
+	if splitscreen < 2 then -- don't change shit for THIS splitscreen.
+		if c.pnum == 1 then
+			fx = ITEM_X
+			fy = ITEM_Y
+			fflags = V_SNAPTOTOP|V_SNAPTOLEFT
+		else
+			fx = ITEM_X
+			fy = ITEM_Y
+			fflags = V_SNAPTOLEFT|V_SPLITSCREEN
+		end
+		
+		v.drawScaled(fx<<FRACBITS, fy<<FRACBITS, FRACUNIT, localbg[1], V_HUDTRANS|fflags)
+		
+	else -- now we're having a fun game.
+		if c.pnum == 1 or c.pnum == 3 then -- If we are P1 or P3...
+			fx = ITEM1_X
+			fy = ITEM1_Y
+			fflags = (c.pnum == 3 and V_SPLITSCREEN or V_SNAPTOTOP)|V_SNAPTOLEFT	-- flip P3 to the bottom.	
+		else -- else, that means we're P2 or P4.
+			fx = ITEM2_X;
+			fy = ITEM2_Y;
+			fflags = (c.pnum == 4 and V_SPLITSCREEN or V_SNAPTOTOP)|V_SNAPTORIGHT
+			flipamount = true;
+		end
+		v.drawScaled(fx<<FRACBITS, fy<<FRACBITS, FRACUNIT, localbg[2], V_HUDTRANS|fflags)
+		
+	end
+	
+	
+	--instead of the bar, which was needed for the SuperLazer, we need the item amount counter
+	--fuck me
+	if p.kartstuff[k_itemamount] > 1 then
+		v.draw(fx + (flipamount and 48 or 0), fy, localmul[offset], V_HUDTRANS|fflags|(flipamount and V_FLIP or 0))
+		if splitscreen < 2 then
+			v.drawScaled(fx<<FRACBITS, fy<<FRACBITS, FRACUNIT, k_maskpatch[get], V_HUDTRANS|fflags, colour)
+		else
+			v.drawScaled(fx<<FRACBITS, fy<<FRACBITS, FRACUNIT, k_maskpatchsmall[get], V_HUDTRANS|fflags, colour)
+		end
+		if offset == 2 then
+			if flipamount then	// reminder that this is for 3/4p's right end of the screen.
+				v.drawString(fx+2, fy+31, "x" + p.kartstuff[k_itemamount], V_ALLOWLOWERCASE|V_HUDTRANS|fflags)
+			else
+				v.drawString(fx+24, fy+31, "x" + p.kartstuff[k_itemamount], V_ALLOWLOWERCASE|V_HUDTRANS|fflags)
+			end
+		else
+			v.draw(fy+28, fy+41, kp_itemx, V_HUDTRANS|fflags)
+			v.drawKartString(fx+38, fy+36, p.kartstuff[k_itemamount], V_HUDTRANS|fflags)
+		end
+	else
+		if splitscreen < 2 then
+			v.drawScaled(fx<<FRACBITS, fy<<FRACBITS, FRACUNIT, k_maskpatch[get], V_HUDTRANS|fflags, colour)
+		else
+			v.drawScaled(fx<<FRACBITS, fy<<FRACBITS, FRACUNIT, k_maskpatchsmall[get], V_HUDTRANS|fflags, colour)
+		end
+	end
+else
+	hud.enable("item")	--kek
+end
+end, "game")
+
+addHook("ThinkFrame", do
+	for p in players.iterate
+		if not (p.exiting)
+			if p.kartstuff[k_invincibilitytimer] and not p.CTRMask then
+			local get
+			if heroskin[p.mo.skin] then
+				p.CTRMask = P_SpawnMobj(p.mo.x, p.mo.y, p.mo.z, MT_AKUMASK_SHIELD)
+				S_StartSound(p.mo, sfx_akuonn)
+				get = mask_invulthemes.heroskin
+			elseif villainskin[p.mo.skin] then
+				p.CTRMask = P_SpawnMobj(p.mo.x, p.mo.y, p.mo.z, MT_UKAMASK_SHIELD)
+				S_StartSound(p.mo, sfx_ukaonn)
+				get = mask_invulthemes.villainskin
+			elseif spacevillainskin[p.mo.skin] then
+				p.CTRMask = P_SpawnMobj(p.mo.x, p.mo.y, p.mo.z, MT_VELOMASK_SHIELD)
+				S_StartSound(p.mo, sfx_veloon)
+				get = mask_invulthemes.spacevillainskin
+			elseif spaceheroskin[p.mo.skin] then
+				p.CTRMask = P_SpawnMobj(p.mo.x, p.mo.y, p.mo.z, MT_EXMASK_SHIELD)
+				S_StartSound(p.mo, sfx_exoonn)
+				get = mask_invulthemes.spaceheroskin
+			elseif spyroskin[p.mo.skin] then
+				p.CTRMask = P_SpawnMobj(p.mo.x, p.mo.y, p.mo.z, MT_SPARX_SHIELD)
+				S_StartSound(p.mo, sfx_sprxon)
+				get = mask_invulthemes.spyroskin
+			elseif aposkin[p.mo.skin] then
+				p.CTRMask = P_SpawnMobj(p.mo.x, p.mo.y, p.mo.z, MT_APOMASK_SHIELD)
+				S_StartSound(p.mo, sfx_apoonn)
+				get = mask_invulthemes.aposkin
+			end
+			if get then
+				P_RestoreMusic(p)
+				S_ChangeMusic(get)
+			end
+		end
+      if p.CTRMask and p.CTRMask.valid then
+		if S_MusicName() == "kinvnc" then	--terrible hacks for a certain issue
+			local get
+			if heroskin[p.mo.skin] then
+				get = mask_invulthemes.heroskin
+			elseif villainskin[p.mo.skin] then
+				get = mask_invulthemes.villainskin
+			elseif spacevillainskin[p.mo.skin] then
+				get = mask_invulthemes.spacevillainskin
+			elseif spaceheroskin[p.mo.skin] then
+				get = mask_invulthemes.spaceheroskin
+			elseif spyroskin[p.mo.skin] then
+				get = mask_invulthemes.spyroskin
+			elseif aposkin[p.mo.skin] then
+				get = mask_invulthemes.aposkin
+			end
+			P_RestoreMusic(p)
+			S_ChangeMusic(get)
+		end
+		--set the offset and angle
+		local flags = MF_NOCLIPTHING
+        local offset = 32*FRACUNIT
+		local angle = leveltime*ANG1*15
+		local orbitheight = 16*FRACUNIT
+		--calculate the mask's position
+		local x = p.mo.x + FixedMul(FixedMul(offset, cos(angle)), mapobjectscale)
+		local y = p.mo.y + FixedMul(FixedMul(offset, sin(angle)), mapobjectscale)
+		local z = p.mo.z + orbitheight + FixedMul(FixedMul(orbitheight, sin(leveltime*(ANG1*3))), mapobjectscale)
+		--move the mask to the new position
+		p.CTRMask.angle = angle
+		P_TeleportMove(p.CTRMask, x, y, z)
+		if not p.kartstuff[k_invincibilitytimer] then
+			P_RemoveMobj(p.CTRMask)
+			P_RestoreMusic(p)
+			  if heroskin[p.mo.skin] then
+			  S_StartSound(p.mo, sfx_akuoff)
+			  elseif villainskin[p.mo.skin] then
+			  S_StartSound(p.mo, sfx_ukaoff)
+			  elseif spacevillainskin[p.mo.skin] then
+			  S_StartSound(p.mo, sfx_veloof)
+			  elseif spaceheroskin[p.mo.skin] then
+			  S_StartSound(p.mo, sfx_exooff)
+			  elseif spyroskin[p.mo.skin] then
+			  S_StartSound(p.mo, sfx_sprxof)
+			  elseif aposkin[p.mo.skin] then
+			  S_StartSound(p.mo, sfx_apooff)
+		  end
+			p.CTRMask = nil
+		end
+      end
+    end
+  end
+end)
+
+function P_SpawnGhostMobj(actor, var1, var2)
+  if actor.player and actor.player.CTRMask then
+  print("CTRMask is working aaaaaaaaa" .. actor.player.CTRMask)
+    return
+  else
+    super(actor, var1, var2)
+  end
+end
+
+addHook("MapLoad", function()	--fixes issues on mapload
+	for p in players.iterate do
+		p.CTRMask = nil
+	end
+end)
+------------------------------------
+//Aku-Aku
+------------------------------------
+mobjinfo[MT_AKUMASK_SHIELD] = {
+	doomednum = -1,
+	spawnstate = S_AKUMASK_SHIELD,
+	spawnhealth = 1000,
+	seestate = S_NULL,
+	seesound = sfx_None,
+	reactiontime = 0,
+	attacksound = sfx_None,
+	painstate = S_NULL,
+	painchance = 0,
+	painsound = sfx_None,
+	meleestate = S_NULL,
+	missilestate = S_NULL,
+	deathstate = S_NULL,
+	xdeathstate = S_NULL,
+	deathsound = sfx_None,
+	speed = 6*FRACUNIT,
+	radius = 16*FRACUNIT,
+	height = 32*FRACUNIT,
+	dispoffset = 0,
+	mass = 100,
+	damage = 1,
+	activesound = sfx_None,
+	flags = MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY|MF_DONTENCOREMAP,
+	raisestate = S_NULL
+}
+
+states[S_AKUMASK_SHIELD] = {
+	sprite = SPR_AKUM,
+	frame = 0,
+	tics = 1,
+	action = A_GhostMe,
+	nextstate = S_AKUMASK_SHIELD
+}
+------------------------------------
+//Uka-Uka
+------------------------------------
+mobjinfo[MT_UKAMASK_SHIELD] = {
+	doomednum = -1,
+	spawnstate = S_UKAMASK_SHIELD,
+	spawnhealth = 1000,
+	seestate = S_NULL,
+	seesound = sfx_None,
+	reactiontime = 0,
+	attacksound = sfx_None,
+	painstate = S_NULL,
+	painchance = 0,
+	painsound = sfx_None,
+	meleestate = S_NULL,
+	missilestate = S_NULL,
+	deathstate = S_NULL,
+	xdeathstate = S_NULL,
+	deathsound = sfx_None,
+	speed = 6*FRACUNIT,
+	radius = 16*FRACUNIT,
+	height = 32*FRACUNIT,
+	dispoffset = 0,
+	mass = 100,
+	damage = 1,
+	activesound = sfx_None,
+	flags = MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY|MF_DONTENCOREMAP,
+	raisestate = S_NULL
+}
+
+states[S_UKAMASK_SHIELD] = {
+    sprite = SPR_UKAM,
+    frame = 0,
+    tics = 1,
+    action = A_GhostMe,
+    nextstate = S_UKAMASK_SHIELD
+}
+------------------------------------
+//Velo Mask
+------------------------------------
+mobjinfo[MT_VELOMASK_SHIELD] = {
+	doomednum = -1,
+	spawnstate = S_VELOMASK_SHIELD,
+	spawnhealth = 1000,
+	seestate = S_NULL,
+	seesound = sfx_None,
+	reactiontime = 0,
+	attacksound = sfx_None,
+	painstate = S_NULL,
+	painchance = 0,
+	painsound = sfx_None,
+	meleestate = S_NULL,
+	missilestate = S_NULL,
+	deathstate = S_NULL,
+	xdeathstate = S_NULL,
+	deathsound = sfx_None,
+	speed = 6*FRACUNIT,
+	radius = 16*FRACUNIT,
+	height = 32*FRACUNIT,
+	dispoffset = 0,
+	mass = 100,
+	damage = 1,
+	activesound = sfx_None,
+	flags = MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY|MF_DONTENCOREMAP,
+	raisestate = S_NULL
+}
+
+states[S_VELOMASK_SHIELD] = {
+    sprite = SPR_VELO,
+    frame = 0,
+    tics = 1,
+    action = A_GhostMe,
+    nextstate = S_VELOMASK_SHIELD
+}
+------------------------------------
+//Ex Mask
+------------------------------------
+mobjinfo[MT_EXMASK_SHIELD] = {
+	doomednum = -1,
+	spawnstate = S_EXMASK_SHIELD,
+	spawnhealth = 1000,
+	seestate = S_NULL,
+	seesound = sfx_None,
+	reactiontime = 0,
+	attacksound = sfx_None,
+	painstate = S_NULL,
+	painchance = 0,
+	painsound = sfx_None,
+	meleestate = S_NULL,
+	missilestate = S_NULL,
+	deathstate = S_NULL,
+	xdeathstate = S_NULL,
+	deathsound = sfx_None,
+	speed = 6*FRACUNIT,
+	radius = 16*FRACUNIT,
+	height = 32*FRACUNIT,
+	dispoffset = 0,
+	mass = 100,
+	damage = 1,
+	activesound = sfx_None,
+	flags = MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY|MF_DONTENCOREMAP,
+	raisestate = S_NULL
+}
+
+states[S_EXMASK_SHIELD] = {
+    sprite = SPR_EXMS,
+    frame = 0,
+    tics = 1,
+    action = A_GhostMe,
+    nextstate = S_EXMASK_SHIELD
+}
+------------------------------------
+//Sparx
+------------------------------------
+mobjinfo[MT_SPARX_SHIELD] = {
+	doomednum = -1,
+	spawnstate = S_SPARX_SHIELD,
+	spawnhealth = 1000,
+	seestate = S_NULL,
+	seesound = sfx_None,
+	reactiontime = 0,
+	attacksound = sfx_None,
+	painstate = S_NULL,
+	painchance = 0,
+	painsound = sfx_None,
+	meleestate = S_NULL,
+	missilestate = S_NULL,
+	deathstate = S_NULL,
+	xdeathstate = S_NULL,
+	deathsound = sfx_None,
+	speed = 6*FRACUNIT,
+	radius = 16*FRACUNIT,
+	height = 32*FRACUNIT,
+	dispoffset = 0,
+	mass = 100,
+	damage = 1,
+	activesound = sfx_None,
+	flags = MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY|MF_DONTENCOREMAP,
+	raisestate = S_NULL
+}
+
+states[S_SPARX_SHIELD] = {
+    sprite = SPR_SPRX,
+    frame = 0,
+    tics = 1,
+    action = A_GhostMe,
+    nextstate = S_SPARX_SHIELD
+}
+------------------------------------
+//Apo-Apo
+------------------------------------
+mobjinfo[MT_APOMASK_SHIELD] = {
+	doomednum = -1,
+	spawnstate = S_APOMASK_SHIELD,
+	spawnhealth = 1000,
+	seestate = S_NULL,
+	seesound = sfx_None,
+	reactiontime = 0,
+	attacksound = sfx_None,
+	painstate = S_NULL,
+	painchance = 0,
+	painsound = sfx_None,
+	meleestate = S_NULL,
+	missilestate = S_NULL,
+	deathstate = S_NULL,
+	xdeathstate = S_NULL,
+	deathsound = sfx_None,
+	speed = 6*FRACUNIT,
+	radius = 16*FRACUNIT,
+	height = 32*FRACUNIT,
+	dispoffset = 0,
+	mass = 100,
+	damage = 1,
+	activesound = sfx_None,
+	flags = MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY|MF_DONTENCOREMAP,
+	raisestate = S_NULL
+}
+
+states[S_APOMASK_SHIELD] = {
+    sprite = SPR_APOM,
+    frame = 0,
+    tics = 1,
+    action = A_GhostMe,
+    nextstate = S_APOMASK_SHIELD
+}
