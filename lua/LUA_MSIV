@@ -68,8 +68,8 @@ local heroskin = {
   ["vonclutch"] = true,
   ["yayapanda"] = true,
   ["hasty"] = true,
-  ["chick"] = true,
-  ["stew"] = true,
+  ["ctr_chick"] = true,
+  ["ctr_stew"] = true,
   ["babycrash"] = true,
   ["babycoco"] = true,
   ["babyt"] = true,
@@ -81,10 +81,12 @@ local heroskin = {
   ["ally"] = true,
   ["schezo"] = true,
   ["raffina"] = true,
+  ["sig"] = true,
   ["lidelle"] = true,
   ["maguro"] = true,
   ["draco"] = true,
   ["puyo_witch"] = true,
+  ["harpypuyo"] = true,
   ["yu&rei"] = true,
   ["hohow_bird"] = true,
   ["sonic"] = true,
@@ -115,6 +117,12 @@ local heroskin = {
   ["kris"] = true,
   ["susie"] = true,
   ["ralsei"] = true,
+  ["hajimehinata"] = true,
+  ["chiaki"] = true,
+  ["komaeda"] = true,
+  ["shuichi"] = true,
+  ["shuichi_with_hat"] = true,
+  ["himiko"] = true,
   ["cottoncandy"] = true,
   ["blackcookie"] = true, 
   ["ioncookie"] = true,
@@ -188,6 +196,10 @@ local villainskin = {
   ["sabrewulf"] = true,
   ["monokuma"] = true,
   ["junkoenoshima"] = true,
+  ["mikantsumiki"] = true,
+  ["kokichi"] = true,
+  ["angie"] = true,
+  ["ryoma"] = true,
   ["lancer"] = true
 }
 ------------------------------------
@@ -463,7 +475,7 @@ addHook("ThinkFrame", do
 		local z = p.mo.z + orbitheight + FixedMul(FixedMul(orbitheight, sin(leveltime*(ANG1*3))), mapobjectscale)
 		--move the mask to the new position
 		p.CTRMask.angle = angle
-		P_TeleportMove(p.CTRMask, x, y, z)
+		P_MoveOrigin(p.CTRMask, x, y, z)
 		if not p.kartstuff[k_invincibilitytimer] then
 			P_RemoveMobj(p.CTRMask)
 			P_RestoreMusic(p)
