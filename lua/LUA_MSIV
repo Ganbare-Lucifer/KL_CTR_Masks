@@ -248,7 +248,7 @@ local spyroskin = {
   ["spyro_sorceress"] = true
 }
 ------------------------------------
-//Characters or Skin Variants protected by Apo-Apo (Post-Apocalyptic, Steam City, Etc.)
+//Characters or Skin Variants protected by Apo-Apo (Post-Apocalyptic, Steam City, Paradox Pokémon, Etc.)
 ------------------------------------
 local aposkin = {
   ["doom"] = true,
@@ -257,7 +257,23 @@ local aposkin = {
   ["aponina"] = true,
   ["steamraffina"] = true,
   ["apodingodile"] = true,
-  ["steammaguro"] = true
+  ["steammaguro"] = true,
+  ["great_tusk"] = true,
+  ["brute_bonnet"] = true,
+  ["scream_tail"] = true,
+  ["flutter_mane"] = true,
+  ["slither_wing"] = true,
+  ["sandy_shocks"] = true,
+  ["roaring_moon"] = true,
+  ["walking_wake"] = true,
+  ["iron_treads"] = true,
+  ["iron_bundle"] = true,
+  ["iron_hands"] = true,
+  ["iron_jugulis"] = true,
+  ["iron_moth"] = true,
+  ["iron_thorns"] = true,
+  ["iron_valiant"] = true,
+  ["iron_leaves"] = true
 } 
 ------------------------------------
 //List ends here, please don't touch anything of the following.
